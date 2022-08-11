@@ -1,0 +1,51 @@
+.award {
+    overflow: hidden;
+    &::after {
+        content: "";
+        width: 10rem;
+        height: 37rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-image: linear-gradient(to left, rgba(#1A1A1A00, .8), rgba(#1A1A1A00, 0));
+    }
+
+    & .row {
+        margin-left: 5vw;
+    }
+    & .col {
+        margin-right: 2rem;
+    }
+    &__img {
+        border-radius: 2rem;
+    }
+    &__img-box {
+        position: relative;
+        margin-bottom: 2.4rem;
+    }
+    &__sub-box {
+        background-color: #F9A825;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        color:#1A1A1A;
+        padding: 0.4rem 1.2rem;
+        display: inline-block;
+        border-radius: 2rem;
+        position: absolute;
+        bottom: 1.8rem;
+        left: 1.8rem;
+    }
+    &__item {
+
+        &-link {
+            text-decoration: none;
+        }
+        &-heading {
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 2.8rem;
+            color: $white-color;
+            margin-bottom: 2rem;
+        }
+    }
+}

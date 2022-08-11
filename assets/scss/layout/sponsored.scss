@@ -1,0 +1,56 @@
+.sponsored {
+    margin-top: 3.2rem;
+
+    & .row {
+        margin-right: -1rem;
+        margin-left: -1rem;
+    }
+
+    & .col {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    &__item {
+
+        &-link {
+            text-decoration: none;
+        }
+    }
+
+    &__img {
+        border-radius: 2rem;
+        object-fit: cover;
+    }
+
+    &__sub-box {
+        background-color: $primary-color;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        color: $white-color;
+        padding: 0.4rem 1.2rem;
+        display: inline-block;
+        border-radius: 2rem;
+        position: absolute;
+        bottom: 1.8rem;
+        left: 1.8rem;
+    }
+
+    &__img-box {
+        position: relative;
+        margin-bottom: 0.8rem;
+    }
+
+    &__heading {
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+        color: $white-color;
+        margin-bottom: 0.8rem;
+    }
+
+    &__time {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        color: $text-color;
+    }
+}

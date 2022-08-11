@@ -1,0 +1,208 @@
+.header {
+    position: relative;
+    height: 100vh;
+
+    &__bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    & .grid.wide {
+        position: relative;
+        height: 100%;
+    }
+
+    & .navigation {
+        display: flex;
+        justify-content: space-between;
+        height: 8rem;
+        align-items: center;
+    }
+
+    & .navigation {
+        &__left {
+            display: flex;
+            align-items: center;
+        }
+
+        &__right {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__logo {
+        display: block;
+        padding-top: 0.2rem;
+        margin-right: 2.4rem;
+        animation: moveDowm 1s ease-in-out backwards;
+    }
+
+    &__link-browse {
+        padding: 1.6rem;
+        color: #F5F5F5;
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        font-weight: 300;
+        font-family: 'raleway', serif;
+        animation: moveDowm 1s .25s ease-in-out backwards;
+        margin-right: 1.6rem;
+    }
+
+    &__search-button {
+        outline: none;
+        border: 0;
+        background-color: transparent;
+        padding: 1.2rem;
+        cursor: pointer;
+        animation: moveDowm 1s .5s ease-in-out backwards;
+        border-radius: 50%;
+
+        &:hover {
+            background-color: rgba($color: #000000, $alpha: .2);
+        }
+    }
+
+    &__account {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        background-color: $primary-color;
+        border-radius: 10rem;
+        animation: moveDowm 1s .25s ease-in-out backwards;
+        margin-right: 1rem;
+
+        &:hover &-content {
+            transform: translateY(5rem);
+        }
+
+        &:hover &-content-hiden {
+            transform: translateY(calc(-50% + 1rem));
+        }
+
+        &-content {
+            padding: 1.25rem 1.6rem;
+            font-size: 2rem;
+            line-height: 2.4rem;
+            color: $white-color;
+            transition: all .25s;
+            transform: translateY(0);
+            position: relative;
+
+            &-hiden {
+                transition: all .25s;
+                position: absolute;
+                bottom: calc(100% + 1rem);
+            }
+        }
+        &-greet {
+            font-weight: 400;
+        }
+        &-name {
+            font-weight: 700;
+        }
+        &-img {
+            padding: 0.4rem;
+            cursor: pointer;
+            transition: all .1s;
+        }
+        
+        &:hover &-img {
+            transform: scale(1.1);
+            filter: blur(0.2rem) brightness(90%);
+        }
+    }
+
+    &__setting {
+        cursor: pointer;
+        padding: 1rem;
+        animation: moveDowm 1s ease-in-out backwards;
+        border-radius: 50%;
+
+        &:hover {
+            background-color: rgba($color: #000000, $alpha: .2);
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        animation: moveRight 1.5s ease-in-out backwards;
+        bottom: 4rem;
+
+        &-sponsored {
+            display: inline-flex;
+            align-items: center;
+            font-size: 1.2rem;
+            color: $white-color;
+            font-weight: 400;
+            background-color: rgba($color: #F5F5F5, $alpha: .3);
+            border-radius: 10rem;
+            margin-bottom: 2rem;
+            padding: 1.2rem;
+
+            & img {
+                margin-right: 0.6rem;
+                margin-left: 2rem;
+            }
+
+        }
+
+        &-content {
+            color: $white-color;
+            margin-bottom: 2.8rem;
+
+            &-name {
+                font-size: 4.8rem;
+                line-height: 5.6rem;
+                font-weight: 600;
+            }
+            &-desc {
+                font-size: 3.2rem;
+                line-height: 3.8rem;
+                font-weight: 500;
+            }
+        }
+
+
+        &-play-box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.6rem;
+
+            & .btn {
+
+                &-link-hiden,
+                &-link {
+                    & img {
+                        margin-right: 2.8rem;
+                    }
+                }
+            }
+        }
+        &-plus {
+            padding: 1rem;
+            width: 3.2rem;
+            height: 3.2rem;
+            margin-left: 3.2rem;
+            border-radius: 50%;
+            transition: .25s;
+            background-color: rgba($color: #000000, $alpha: .4);
+
+            &:hover {
+                cursor: pointer;
+                opacity: .8;
+            }
+        }
+        &-link {
+            color: $white-color;
+            font-size: 1.6rem;
+            line-height: 1.8rem;
+            margin-left: 3.6rem;
+        }
+    }
+}
+

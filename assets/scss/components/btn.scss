@@ -1,0 +1,69 @@
+// btn-hover 
+
+
+.btn {
+    background-color: $primary-color;
+    border: 0;
+    outline: none;
+    padding: 1.6rem 3.2rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10rem;
+
+    &:hover &-link{
+        transform: translateY(5rem);
+    }
+    &:hover &-link-hiden {
+        transform: translateY(calc(50% + 7rem));
+    }
+    &-link {
+        transform: translateY(0);
+        transition: all .25s;
+        display: flex;
+        align-items: center;
+        color: $white-color;
+        font-size: 2.8rem;
+        line-height: 3.2rem;
+        text-decoration: none;
+
+        & img {
+            // padding: 1rem 1.2rem;
+        }
+    }
+    &-link-hiden {
+        transition: all .25s;
+        position: absolute;
+        bottom: calc(100% + 4rem);
+        display: flex;
+        align-items: center;
+        color: $white-color;
+        font-size: 2.8rem;
+        line-height: 3.2rem;
+        text-decoration: none;
+    }
+
+    &-category {
+        background-color: transparent;
+        border: 1px solid #595959;
+
+        & .btn-link {
+            color: #595959;
+            font-size: 2rem;
+            line-height: 2.4rem;
+            font-weight: 400;
+        }
+        & .btn-link-hiden {
+            color: #595959;
+            font-size: 2rem;
+            line-height: 2.4rem;
+            font-weight: 400;
+        }
+    }
+}
+
+
+.hover {
+    user-select: none;
+    cursor: pointer;
+}
+
